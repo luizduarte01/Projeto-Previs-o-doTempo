@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Previsão do Tempo Moderna</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Previsão do Tempo</h1>
+      <div class="location">
+        <input type="text" id="city-input" placeholder="Digite uma cidade..." />
+        <button onclick="searchWeather()">Buscar</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="weather-today">
+        <h2 id="city">Carregando...</h2>
+        <div class="temperature">
+          <img id="weather-icon" src="./assets/10587825-removebg-preview.png" alt="Ícone do clima" />
+          <span id="temperature">--</span>°C
+        </div>
+        <p id="description"></p>
+        <p>Umidade: <span id="humidity"></span>%</p>
+        <p>Vento: <span id="wind"></span> km/h</p>
+      </div>
+
+      <section class="forecast">
+        <h3>Previsão para os próximos dias</h3>
+        <div id="forecast-container" class="forecast-container">
+          <!-- Cards de previsão diária serão gerados aqui via JavaScript -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+
+</body>
+<script src="./script.js"></script>
+
+</html>

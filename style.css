@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.app-container {
+  width: 90%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.location input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1em;
+  margin-right: 8px;
+}
+
+.location button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff9800;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.weather-today {
+  margin-top: 20px;
+}
+
+.temperature {
+  font-size: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+
+
+.forecast {
+  margin-top: 30px;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.forecast-day {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  width: 30%;
+}
+
+.forecast-day h4 {
+  font-size: 1em;
+}
+
+.forecast-day p {
+  margin: 5px 0;
+}
+
+.temperature img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
